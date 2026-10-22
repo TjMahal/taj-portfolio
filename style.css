@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b16;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #111122;
+    border-bottom: 1px solid #25254a;
+}
+
+header h1 {
+    color: #00e5ff;
+    font-size: 28px;
+    text-shadow: 0 0 12px #00e5ff;
+}
+
+header p {
+    color: #b8b8d9;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    padding: 80px 10%;
+    min-height: 250px;
+    animation: fadeIn 1s ease-in;
+}
+
+section h2 {
+    color: #00e5ff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #d0d0e8;
+    max-width: 750px;
+    margin-bottom: 18px;
+}
+
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: radial-gradient(circle at top right, #28205c, #0b0b16 60%);
+}
+
+#home h2 {
+    font-size: clamp(36px, 6vw, 60px);
+}
+
+#home p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    color: #0b0b16;
+    background: #00e5ff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #a855f7;
+    color: #ffffff;
+    box-shadow: 0 0 20px #a855f7;
+    transform: translateY(-3px);
+}
+
+#about {
+    background-color: #101020;
+}
+
+#projects {
+    background-color: #0b0b16;
+}
+
+#contact {
+    background-color: #101020;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #080810;
+    border-top: 1px solid #25254a;
+    color: #9292b5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    section {
+        padding: 55px 7%;
+    }
+}
+
+    .typing-line {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #typing-text {
+        color: #a855f7;
+        font-weight: bold;
+        text-shadow: 0 0 10px #a855f7;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .project-card {
+        background: #17172b;
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid #34345a;
+        transition: 0.3s ease;
+    }
+
+    .project-card h3 {
+        color: #00e5ff;
+        margin-bottom: 12px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .project-card span {
+        font-size: 12px;
+        color: #a855f7;
+        font-weight: bold;
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        border-color: #00e5ff;
+        box-shadow: 0 0 20px #00e5ff33;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: #d0d0e8;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #00e5ff;
+        text-shadow: 0 0 10px #00e5ff;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            justify-content: center; 
+        }
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        scroll-margin-top: 20px;
+    }
+
+    @media (max-width: 900px) {
+        header {
+            padding: 20px 5%;
+        }
+        section {
+            padding: 60px 6%;
+        }
+        #home {
+            min-height: 60vh;
+        }
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        nav {
+            justify-content: center;
+            gap: 12px;
+        }
+        nav a {
+            font-size: 14px;
+        }
+        section h2 {
+            font-size: 28px;
+        }
+        #home h2 {
+            font-size: 36px;
+        }
+        #home p {
+            font-size: 16px;
+        }
+        .project-container {
+            grid-template-columns: 1fr;
+        }
+        .project-card {
+            padding: 20px;
+        }
+    }
+
+    #home {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #home h2 {
+        text-shadow: 0 0 18px #00e5ff;, 
+    }
+
+    .project-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px) scale(1.01);
+    }
+
+    .btn {
+        box-shadow: 0 0 12px #00e5ff22;
+    }
+
+    .btn:focus-visible, nav a:focus-visible {
+        outline: 2px solid #a855f7;
+        outline-offset: 5px;
+    }
+
+    #about h3 {
+    color: #a855f7;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 22px;
+    }
+
+    .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    }
+
+    .skills span {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #17172b;
+    color: #00e5ff;
+    border: 1px solid #00e5ff66;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    }
+
+    .skills span:hover {
+    background: #00e5ff;
+    color: #0b0b16;
+    box-shadow: 0 0 15px #00e5ff88;
+    transform: translateY(-4px);
+    }
+
+    .project-links {
+    margin-top: 20px;
+    }
+
+    .project-link {
+    display: inline-block;
+    padding: 9px 16px;
+    color: #00e5ff;
+    border: 1px solid #00e5ff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    }
+
+    .project-link:hover {
+    background: #00e5ff;
+    color: #0b0b16;
+    box-shadow: 0 0 15px #00e5ff88;
+    }
+
+    
